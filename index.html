@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="A practical GitHub learning and mastery tracker.">
+
+    <title>GitHub Mastery Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+        <div class="brand">
+            <div class="brand-mark">GH</div>
+
+            <div>
+                <strong>GitHub Mastery</strong>
+                <small>Learn by doing</small>
+            </div>
+        </div>
+
+        <div class="topbar-search">
+            <span>⌕</span>
+
+            <input
+                type="search"
+                id="globalSearch"
+                placeholder="Search lessons, skills and concepts..."
+                autocomplete="off"
+            >
+        </div>
+
+        <div class="topbar-right">
+
+            <span class="save-indicator" id="saveIndicator">
+                ● Saved locally
+            </span>
+
+            <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="github-link"
+            >
+                Open GitHub ↗
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN LAYOUT -->
+
+    <div class="layout">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-course">
+
+                <div class="course-icon">⌘</div>
+
+                <div>
+                    <strong>Mastery Program</strong>
+                    <small>Beginner to Advanced</small>
+                </div>
+
+            </div>
+
+
+            <div class="side-label">LEARNING</div>
+
+            <nav class="navigation">
+
+                <button class="nav-item active"
+                        data-view="dashboard">
+                    <span>▦</span>
+                    Overview
+                </button>
+
+<button class="nav-item" data-view="settings">
+    <span>⚙</span>
+    Settings & Backups
+</button>
+
+                <button class="nav-item"
+                        data-view="path">
+                    <span>☷</span>
+                    Learning Path
+                </button>
+
+                <button class="nav-item"
+                        data-view="lab">
+                    <span>⚒</span>
+                    Practice Lab
+                </button>
+
+                <button class="nav-item"
+                        data-view="glossary">
+                    <span>⌕</span>
+                    GitHub Dictionary
+                </button>
+
+                <button class="nav-item"
+                        data-view="notebook">
+                    <span>▤</span>
+                    My Notebook
+                </button>
+
+            </nav>
+
+
+            <div class="side-label">MY PROGRESS</div>
+
+            <div class="sidebar-progress">
+
+                <div class="sidebar-progress-row">
+                    <span>Mastery</span>
+                    <strong id="sidePercentage">0%</strong>
+                </div>
+
+                <div class="progress-track">
+                    <div class="progress-fill"
+                         id="sideProgressFill">
+                    </div>
+                </div>
+
+                <small id="sideProgressText">
+                    0 of 44 lessons mastered
+                </small>
+
+            </div>
+
+
+            <div class="side-label">QUICK ACCESS</div>
+
+            <div class="quick-links">
+
+                <a href="https://github.com/new"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    ↗ Create repository
+                </a>
+
+                <a href="https://github.com/dashboard"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    ↗ GitHub dashboard
+                </a>
+
+                <a href="https://docs.github.com/en"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    ↗ Official documentation
+                </a>
+
+            </div>
+
+
+            <div class="sidebar-bottom">
+
+                <div class="learning-principle">
+                    <span>✦</span>
+
+                    <strong>Practice principle</strong>
+
+                    <p>
+                        Understand it. Open GitHub.
+                        Perform it. Experiment.
+                        Explain it.
+                    </p>
+
+                </div>
+
+                <div class="sidebar-version">
+                    GITHUB MASTERY TRACKER · V1
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+
+        <main class="main-content" id="app">
+
+            <div class="loading">
+                Loading your learning environment...
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- TOAST -->
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+
+</div>
+
+</body>
+</html>
+
